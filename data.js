@@ -24,6 +24,15 @@ export const projectData = [
     demoLink: "https://rishabh2024.github.io/E-CommerceSite/project1/",
     githubLink: "https://github.com/Rishabh2024/E-CommerceSite",
   },
+  {
+    name: "Pokemon Dex",
+    description:
+      " Developed a Pokedex application using React, focusing on state management and custom hooks. Integrated the Pokémon API to fetch and display data dynamically, ensuring a responsive and interactive user experience while adhering to modern React best practices.",
+
+    img: "/images/pokemon.png",
+    demoLink: "https://pokedex-mu-rose-41.vercel.app/",
+    githubLink: "https://github.com/Rishabh2024/Pokedex",
+  },
 ];
 
 export const skillData = [
