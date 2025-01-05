@@ -33,6 +33,16 @@ export const projectData = [
     demoLink: "https://pokedex-mu-rose-41.vercel.app/",
     githubLink: "https://github.com/Rishabh2024/Pokedex",
   },
+
+  {
+    name: "Quiz App",
+    description:
+      "Mini project built with HTML, CSS (Tailwind CSS), and JavaScript. It features a user-friendly interface for taking quizzes, dynamic question rendering, interactive options, and real-time score tracking. Tailwind CSS ensures a responsive and modern design, while JavaScript handles the quiz logic and interactivity. ",
+
+    img: "/images/quiz-app.png",
+    demoLink: "https://github.com/Rishabh2024/Quiz-app",
+    githubLink: "https://rishabh2024.github.io/Quiz-app/",
+  },
 ];
 
 export const skillData = [
