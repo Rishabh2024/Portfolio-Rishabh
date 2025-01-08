@@ -46,7 +46,7 @@ export const projectData = [
   {
     name: "GitHub UserSearch",
     description:
-      "Mini project built with HTML, CSS (Tailwind CSS), and JavaScript. It features a user-friendly interface for taking quizzes, dynamic question rendering, interactive options, and real-time score tracking. Tailwind CSS ensures a responsive and modern design, while JavaScript handles the quiz logic and interactivity. ",
+      "This project allows users to find GitHub account details by simply entering a username. It leverages the GitHub API to fetch and display user information, such as profile details, repositories, and activity, providing a quick and efficient way to explore GitHub profiles.",
 
     img: "/images/githubuser.png",
     demoLink: "https://github-user-search-eosin-eight.vercel.app/",
