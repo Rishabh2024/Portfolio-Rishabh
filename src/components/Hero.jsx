@@ -25,8 +25,8 @@ const Hero = () => {
       </div>
       <div className="py-6">
         <a
-          download="Rishabh-pal  FrontEnd-1.pdf"
-          href="/Rishabh-pal  FrontEnd-1.pdf"
+          download="E-Rishabh-pal.pdf"
+          href="/E-Rishabh-pal.pdf"
           className="px-12 py-4 text-lg rounded-full shadow-lg font-otterco bg-myBlack text-myWhite"
         >
           Resume
