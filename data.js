@@ -43,6 +43,15 @@ export const projectData = [
     demoLink: "https://rishabh2024.github.io/Quiz-app/",
     githubLink: "https://github.com/Rishabh2024/Quiz-app",
   },
+  {
+    name: "GitHub UserSearch",
+    description:
+      "Mini project built with HTML, CSS (Tailwind CSS), and JavaScript. It features a user-friendly interface for taking quizzes, dynamic question rendering, interactive options, and real-time score tracking. Tailwind CSS ensures a responsive and modern design, while JavaScript handles the quiz logic and interactivity. ",
+
+    img: "/images/githubuser.png",
+    demoLink: "https://github-user-search-eosin-eight.vercel.app/",
+    githubLink: "https://github.com/Rishabh2024/Github-UserSearch",
+  },
 ];
 
 export const skillData = [
