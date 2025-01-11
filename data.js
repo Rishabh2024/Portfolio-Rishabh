@@ -58,7 +58,7 @@ export const projectData = [
     description:
       "This Task Management Dashboard is a responsive web application for organizing tasks efficiently. It allows users to add, edit, filter, and delete tasks, complete with status updates and timestamps. Built with React, Material-UI, and localStorage, it ensures smooth functionality and user-friendly design.",
 
-    img: "/images/react-dashboard.png",
+    img: "/images/React-dashboard.png",
     demoLink: "https://merry-pixie-243c08.netlify.app/",
     githubLink: "https://github.com/Rishabh2024/Dashboard-Task",
   },
