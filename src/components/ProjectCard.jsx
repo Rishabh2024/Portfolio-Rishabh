@@ -1,32 +1,40 @@
 import React from "react";
 
 const ProjectCard = ({ project }) => {
-    const { name, description, img, demoLink, githubLink } = project;
-    console.log(name);
+  const { name, description, img, demoLink, githubLink } = project;
+  console.log(name);
 
-    return (
-        <div className="bg-myWhite rounded-lg overflow-hidden transform transition duration-300 border-myBg border-2 shadow-md">
-            <img src={img} alt={name} className="w-full aspect-video object-cover pl-6 pr-6 pt-6 rounded-md" />
-            <div className="p-6">
-                <h2 className=" text-myBlack font-bold text-lg mb-2 font-otterco">{name}</h2>
-                <p className="text-lg text-myBlack mb-4 font-otterco ">{description}</p>
-                <div className="flex w-full items-center justify-start gap-3 flex-wrap">
-                    <a
-                        href={demoLink}
-                        target="_blank"
-                        className="text-base px-12 py-4 font-otterco bg-myBlack text-myWhite rounded-full border-myBg border-[1px] ">
-                        Demo
-                    </a>
-                    <a
-                        href={githubLink}
-                        target="_blank"
-                        className="text-base px-12 py-4 font-otterco bg-myWhite text-myBlack rounded-full border-myBg border-2 ">
-                        Code
-                    </a>
-                </div>
-            </div>
+  return (
+    <div className="overflow-hidden transition duration-300 transform border-2 rounded-lg shadow-md bg-myWhite border-myBg">
+      <img
+        src={img}
+        alt={name}
+        className="object-cover w-full pt-6 pl-6 pr-6 rounded-md aspect-video"
+      />
+      <div className="p-6">
+        <h2 className="mb-2 text-lg font-bold text-myBlack font-otterco">
+          {name}
+        </h2>
+        <p className="mb-4 text-lg text-myBlack font-otterco ">{description}</p>
+        <div className="flex flex-wrap items-center justify-start w-full gap-3">
+          <a
+            href={demoLink}
+            target="_blank"
+            className="text-base px-12 py-4 font-otterco bg-myBlack text-myWhite rounded-full border-myBg border-[1px] "
+          >
+            Demo
+          </a>
+          <a
+            href={githubLink}
+            target="_blank"
+            className="px-12 py-4 text-base border-2 rounded-full font-otterco bg-myWhite text-myBlack border-myBg "
+          >
+            Code
+          </a>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ProjectCard;

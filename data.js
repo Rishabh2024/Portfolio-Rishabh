@@ -62,6 +62,15 @@ export const projectData = [
     demoLink: "https://merry-pixie-243c08.netlify.app/",
     githubLink: "https://github.com/Rishabh2024/Dashboard-Task",
   },
+  {
+    name: "Twitter-Post-Box",
+    description:
+      "This Twitter Post Component is a responsive web application for creating and managing posts. It allows users to add, edit, save, and delete posts, with interactive features like likes, retweets, and comments. Built with React, HTML, CSS, and JavaScript, it ensures smooth functionality and a user-friendly experience.",
+
+    img: "/images/twitter.png",
+    demoLink: "https://twit-post.netlify.app/",
+    githubLink: "https://github.com/Rishabh2024/Twitter",
+  },
 ];
 
 export const skillData = [
