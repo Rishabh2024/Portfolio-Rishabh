@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   console.log(name);
 
   return (
-    <div className="overflow-hidden transition duration-300 transform border-2 rounded-lg shadow-md bg-myWhite border-myBg">
+    <div className="overflow-hidden transition duration-300 transform border-2 border-gray-800 rounded-lg shadow-md bg-myWhite">
       <img
         src={img}
         alt={name}
