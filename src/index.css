@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url("/fonts/OttercoDisplay-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url("/fonts/OttercoDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url("/fonts/OttercoDisplay-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url("/fonts/OttercoDisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* gradient  */
+
+.text-gradient {
+  background: linear-gradient(
+    97.0286deg,
+    rgb(11, 11, 11) 0%,
+    rgba(12, 12, 12, 0.55) 100%,
+    rgba(12, 12, 12, 0.55) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
