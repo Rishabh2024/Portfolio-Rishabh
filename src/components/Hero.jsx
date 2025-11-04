@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
       <div>
         <h1 className="text-3xl font-semibold tracking-tight text-center text-gradient md:text-5xl">
-          Software Developer<br /> Nextjs<br />  Developer
+          Software Developer
         </h1>
       </div>
       <div className="py-6">
