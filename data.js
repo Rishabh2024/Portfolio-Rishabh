@@ -81,16 +81,17 @@ export const skillData = [
       "Developing server-side logic, databases, GoLang, Next.js and APIs to support web applications.",
     icon: FaServer,
   },
-  {
-    skillName: "Git and GitHub",
-    skillDescription:
-      "Version control and collaboration using Git for tracking changes in source code.",
-    icon: FaGithub,
-  },
+ {
+  skillName: "Git, GitHub, Vercel & Netlify",
+  skillDescription:
+    "Managing version control using Git and GitHub, and deploying modern web applications efficiently on Vercel and Netlify.",
+  icon: FaGithub,
+},
+
   {
     skillName: "AWS Deployment (ECS & S3)",
     skillDescription:
-      "Deploying scalable applications using AWS ECS (Fargate/EC2) and hosting static websites or assets efficiently on Amazon S3 with proper versioning and CDN optimization.",
+      "Deploying scalable applications using AWS ECS (Fargate/EC2) and hosting static websites or assets efficiently on Amazon S3 .",
     icon: FaAws,
   },
 ];
