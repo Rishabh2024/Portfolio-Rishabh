@@ -1,17 +1,49 @@
-import React from 'react';
+import React from "react";
 
 const SkillCard = ({ skill }) => {
-    const { skillName, skillDescription, icon: Icon } = skill;
+  const { skillName, skillDescription, icon: Icon } = skill;
 
-    return (
-        <div className=" rounded-lg overflow-hidden  ">
-            <div className="p-4 flex flex-col items-center gap-2">
-                <Icon className="w-6 h-6 text-myBlack mb-4" />
-                <h2 className="text-lg font-bold font-otterco text-center">{skillName}</h2>
-                <p className="text-myBlack font-otterco text-lg  text-center">{skillDescription}</p>
-            </div>
+  return (
+    <div
+      className="
+        group relative rounded-2xl p-[1px]
+        bg-gradient-to-br from-purple-500/60 via-blue-500/60 to-pink-500/60
+        hover:from-purple-500 hover:via-blue-500 hover:to-pink-500
+        transition-all duration-300 shadow-xl
+      "
+    >
+      <div
+        className="
+          bg-white/80 backdrop-blur-xl dark:bg-black/40
+          rounded-2xl p-6 text-center
+          flex flex-col items-center gap-3 transition-all duration-300
+          group-hover:scale-[1.02]
+
+          min-h-[260px]   /* ✅ All cards same height */
+          flex
+          flex-col
+          justify-between
+        "
+      >
+        {/* ICON */}
+        <div
+          className="flex items-center justify-center transition-all duration-300 rounded-full shadow-lg w-14 h-14 bg-gradient-to-br from-purple-500/20 to-blue-500/20 group-hover:shadow-purple-400/40"
+        >
+          <Icon className="text-purple-700 w-7 h-7 dark:text-purple-300" />
         </div>
-    );
+
+        {/* TITLE */}
+        <h2 className="text-xl font-bold text-gray-900 dark:text-white font-otterco">
+          {skillName}
+        </h2>
+
+        {/* DESCRIPTION */}
+        <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300 font-otterco">
+          {skillDescription}
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default SkillCard;
