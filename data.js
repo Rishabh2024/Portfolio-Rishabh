@@ -91,7 +91,7 @@ export const skillData = [
   {
     skillName: "AWS Deployment (ECS & S3)",
     skillDescription:
-      "Deploying scalable applications using AWS ECS (Fargate/EC2) and hosting static websites or assets efficiently on Amazon S3 .",
+      "Deploying scalable applications on AWS ECS (Fargate/EC2) and hosting static websites or assets efficiently on Amazon S3 .",
     icon: FaAws,
   },
 ];
