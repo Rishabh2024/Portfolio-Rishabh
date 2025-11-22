@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaComments,
   FaUserTie,
+  FaAws, // ✅ AWS icon import added
 } from "react-icons/fa";
 
 export const projectData = [
@@ -18,8 +19,7 @@ export const projectData = [
   {
     name: "E-Commerce Website",
     description:
-      " E-Commerce Website, a user-friendly platform offering a seamless shopping experience. Browse through a wide range of products, enjoy intuitive navigation, and find everything you need at your fingertips. Built with modern design and functionality to ensure customer satisfaction.",
-
+      "E-Commerce Website, a user-friendly platform offering a seamless shopping experience. Browse through a wide range of products, enjoy intuitive navigation, and find everything you need at your fingertips. Built with modern design and functionality to ensure customer satisfaction.",
     img: "/images/Ecommerce.png",
     demoLink: "https://rishabh2024.github.io/E-CommerceSite/project1/",
     githubLink: "https://github.com/Rishabh2024/E-CommerceSite",
@@ -27,8 +27,7 @@ export const projectData = [
   {
     name: "Pokemon Dex",
     description:
-      " Developed a Pokedex application using React, focusing on state management and custom hooks. Integrated the Pokémon API to fetch and display data dynamically, ensuring a responsive and interactive user experience while adhering to modern React best practices.",
-
+      "Developed a Pokedex application using React, focusing on state management and custom hooks. Integrated the Pokémon API to fetch and display data dynamically, ensuring a responsive and interactive user experience while adhering to modern React best practices.",
     img: "/images/pokemon.png",
     demoLink: "https://pokedex-mu-rose-41.vercel.app/",
     githubLink: "https://github.com/Rishabh2024/Pokedex",
@@ -37,8 +36,7 @@ export const projectData = [
   {
     name: "Quiz App",
     description:
-      "Mini project built with HTML, CSS (Tailwind CSS), and JavaScript. It features a user-friendly interface for taking quizzes, dynamic question rendering, interactive options, and real-time score tracking. Tailwind CSS ensures a responsive and modern design, while JavaScript handles the quiz logic and interactivity. ",
-
+      "Mini project built with HTML, CSS (Tailwind CSS), and JavaScript. It features a user-friendly interface for taking quizzes, dynamic question rendering, interactive options, and real-time score tracking.",
     img: "/images/quiz-app.png",
     demoLink: "https://rishabh2024.github.io/Quiz-app/",
     githubLink: "https://github.com/Rishabh2024/Quiz-app",
@@ -46,8 +44,7 @@ export const projectData = [
   {
     name: "GitHub UserSearch",
     description:
-      "This project allows users to find GitHub account details by simply entering a username. It leverages the GitHub API to fetch and display user information, such as profile details, repositories, and activity, providing a quick and efficient way to explore GitHub profiles.",
-
+      "This project allows users to find GitHub account details by simply entering a username. It fetches and displays profile details, repositories, and activity using the GitHub API.",
     img: "/images/githubuser.png",
     demoLink: "https://github-user-search-eosin-eight.vercel.app/",
     githubLink: "https://github.com/Rishabh2024/Github-UserSearch",
@@ -56,8 +53,7 @@ export const projectData = [
   {
     name: "Dashboard Task Management",
     description:
-      "This Task Management Dashboard is a responsive web application for organizing tasks efficiently. It allows users to add, edit, filter, and delete tasks, complete with status updates and timestamps. Built with React, Material-UI, and localStorage, it ensures smooth functionality and user-friendly design.",
-
+      "A responsive dashboard for managing tasks with add, edit, filter, and delete features. Built with React, Material-UI, and localStorage for smooth interaction.",
     img: "/images/dashboard.png",
     demoLink: "https://merry-pixie-243c08.netlify.app/",
     githubLink: "https://github.com/Rishabh2024/Dashboard-Task",
@@ -65,8 +61,7 @@ export const projectData = [
   {
     name: "Twitter-Post-Box",
     description:
-      "This Twitter Post Component is a responsive web application for creating and managing posts. It allows users to add, edit, save, and delete posts, with interactive features like likes, retweets, and comments. Built with React, HTML, CSS, and JavaScript, it ensures smooth functionality and a user-friendly experience.",
-
+      "A responsive Twitter Post component with features like add/edit posts, likes, retweets, and comments. Built using React, HTML, CSS, and JavaScript.",
     img: "/images/twitter.png",
     demoLink: "https://twit-post.netlify.app/",
     githubLink: "https://github.com/Rishabh2024/Twitter",
@@ -83,7 +78,7 @@ export const skillData = [
   {
     skillName: "Backend Development",
     skillDescription:
-      "Developing server-side logic, databases,Go Lang ,NextJs and APIs to support web applications.",
+      "Developing server-side logic, databases, GoLang, Next.js and APIs to support web applications.",
     icon: FaServer,
   },
   {
@@ -93,9 +88,9 @@ export const skillData = [
     icon: FaGithub,
   },
   {
-    skillName: "Communication Skills",
+    skillName: "AWS Deployment (ECS & S3)",
     skillDescription:
-      "Effectively conveying information and ideas through various channels and ensuring clear understanding.",
-    icon: FaComments,
+      "Deploying scalable applications using AWS ECS (Fargate/EC2) and hosting static websites or assets efficiently on Amazon S3 with proper versioning and CDN optimization.",
+    icon: FaAws,
   },
 ];
