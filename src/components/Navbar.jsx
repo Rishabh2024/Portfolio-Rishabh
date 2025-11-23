@@ -50,7 +50,7 @@ const Navbar = () => {
           md:translate-x-0 transition-transform duration-300 ease-in-out 
           pt-24 md:pt-0`}
         >
-          {["home", "projects", "skills", "contact"].map((item) => (
+          {["home", "projects", "skills", "contact","services"].map((item) => (
             <li key={item}>
               <Link
                 to={item}
