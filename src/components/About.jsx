@@ -14,9 +14,7 @@ const About = () => {
           About Me
         </h1>
         <span className="block w-20 h-1 mx-auto mt-3 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></span>
-        <p className="max-w-xl mx-auto mt-4 text-gray-600">
-          I am Rishabh Pal, a passionate Software Developer building high-quality websites and applications with modern UI, responsive layouts, and clean architecture.
-        </p>
+        
       </div>
 
       {/* Content */}
@@ -32,7 +30,8 @@ const About = () => {
         <div className="flex-1 space-y-8">
           {/* Description */}
           <p className="text-lg leading-relaxed text-gray-700 opacity-0 animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
-            I specialize in building modern, responsive web applications using React, Next.js, and Node.js GoLang. My goal is to deliver seamless user experiences with clean code and visually appealing designs.
+            Product-focused data driven AI Engineer with hands-on experience contributing to large-scale open-source projects & building production-grade web apps. Strong foundation in <b>JavaScript</b> Reactjs & Nextjs & LMS with expertise in Web apps. actively building AI-powered solutions and scalable systems. Solved 200+ algorithm problems across competitive coding platforms.
+          
           </p>
 
           {/* Stats */}

@@ -19,8 +19,7 @@ const Skills = () => {
         </h1>
 
         <p className="max-w-xl mx-auto mt-4 text-sm text-myBlack/80 md:text-base">
-          These are the tools and technologies I use to build modern, scalable
-          and high-performance applications.
+       Building production-grade AI-powered solutions.
         </p>
       </div>
 

@@ -28,19 +28,19 @@ const Hero = () => {
             className="border-4 rounded-full shadow-lg border-myWhite"
           />
           <p className="absolute px-6 py-3 text-xs font-semibold rounded-full shadow-lg font-otterco bg-myWhite top-16 -right-24 animate-slideIn">
-            Rishabh Pal 👋🏼
+            Hi, I am Rishabh 👋🏼
           </p>
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-center text-white md:text-5xl">
-          Software Developer
+          Gen AI Developer 
         </h1>
 
         <div className="py-6 text-center">
   <a
     download="Software-Developer.pdf"
     href="/Software-Developer.pdf"
-    className="px-12 py-4 text-lg text-white transition-all duration-300 rounded-full shadow-xl  font-otterco bg-gradient-to-r from-purple-600 to-blue-600 animate-pulse hover:scale-105"
+    className="px-12 py-4 text-lg text-white transition-all duration-300 rounded-full shadow-xl font-otterco bg-gradient-to-r from-purple-600 to-blue-600 animate-pulse hover:scale-105"
   >
     Resume
   </a>

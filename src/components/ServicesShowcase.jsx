@@ -60,7 +60,7 @@ export default function ServicesShowcase({ contactHref = "mailto:rishabhpal326@g
       <div className="flex flex-col items-start justify-between gap-6 mb-10 md:flex-row md:items-center">
         <div>
           <h2 className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
-            My Expertise
+            Work Experience
           </h2>
           <p className="max-w-xl mt-2 text-gray-600">
             Creating beautiful, performant websites and apps with modern UI, responsive layouts, and clean architecture.

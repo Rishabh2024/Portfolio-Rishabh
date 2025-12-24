@@ -72,7 +72,7 @@ export const skillData = [
   {
     skillName: "Frontend Development",
     skillDescription:
-      "Building visually appealing and user-friendly interfaces using HTML, CSS, JavaScript, and React.",
+      "Building visually appealing and user-friendly interfaces using HTML, CSS, JavaScript, and Reactjs Next.js.",
     icon: FaCode,
   },
   {
