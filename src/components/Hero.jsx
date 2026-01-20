@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-center text-white md:text-5xl">
-          Gen AI Developer 
+          Software Developer
         </h1>
 
         <div className="py-6 text-center">
