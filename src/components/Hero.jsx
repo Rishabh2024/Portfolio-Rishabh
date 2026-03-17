@@ -38,8 +38,8 @@ const Hero = () => {
 
         <div className="py-6 text-center">
   <a
-    download="ASP_DotNet_Developer.pdf"
-    href="/ASP_DotNet_Developer.pdf"
+    download="RishabhDotNet.pdf"
+    href="/Resume.pdf"
     className="px-12 py-4 text-lg text-white transition-all duration-300 rounded-full shadow-xl font-otterco bg-gradient-to-r from-purple-600 to-blue-600 animate-pulse hover:scale-105"
   >
     Resume
