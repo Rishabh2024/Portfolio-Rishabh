@@ -1,10 +1,10 @@
 import {
+  FaGlobe,
+  FaFileAlt,
+  FaUserGraduate,
+  FaDatabase,
+  FaUsersCog,
   FaCode,
-  FaServer,
-  FaGithub,
-  FaComments,
-  FaUserTie,
-  FaAws, // ✅ AWS icon import added
 } from "react-icons/fa";
 
 export const projectData = [
@@ -70,28 +70,39 @@ export const projectData = [
 
 export const skillData = [
   {
-    skillName: "Frontend Development",
+    skillName: "Dynamic Websites",
     skillDescription:
-      "Building visually appealing and user-friendly interfaces using HTML, CSS, JavaScript, and Reactjs Next.js.",
+      "High-performance, feature-rich dynamic web applications with real-time data integration and robust interactivity.",
+    icon: FaGlobe,
+  },
+  {
+    skillName: "Static Websites",
+    skillDescription:
+      "Blazing fast, secure, and SEO-optimized static sites for blogs, landing pages, and documentation.",
+    icon: FaFileAlt,
+  },
+  {
+    skillName: "LMS Software",
+    skillDescription:
+      "Custom Learning Management Systems (LMS) for educational institutions and corporate training programs.",
+    icon: FaUserGraduate,
+  },
+  {
+    skillName: "CMS & EMS Software",
+    skillDescription:
+      "Scalable Content & Employee Management Systems designed to streamline corporate workflows and digital assets.",
+    icon: FaDatabase,
+  },
+  {
+    skillName: "Personal Portfolios",
+    skillDescription:
+      "Sleek, professional portfolios and personal branding websites designed to showcase expertise and attract clients.",
     icon: FaCode,
   },
   {
-    skillName: "Backend Development",
+    skillName: "Corporate Software",
     skillDescription:
-      "Developing server-side logic, databases, GoLang, Next.js and APIs to support web applications.",
-    icon: FaServer,
-  },
- {
-  skillName: "Git, GitHub, Vercel & Netlify",
-  skillDescription:
-    "Managing version control using Git and GitHub, and deploying modern web applications efficiently on Vercel and Netlify.",
-  icon: FaGithub,
-},
-
-  {
-    skillName: "AWS Deployment (ECS & S3)",
-    skillDescription:
-      "Deploying scalable applications on AWS ECS (Fargate/EC2) and hosting static websites or assets efficiently on Amazon S3 .",
-    icon: FaAws,
+      "Bespoke software solutions tailored for companies to automate operations and improve organizational efficiency.",
+    icon: FaUsersCog,
   },
 ];

@@ -1,51 +1,118 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Element } from "react-scroll";
+import { Download, ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
   return (
-    <Element
-      name="home"
-      className="relative grid gap-4 p-4 pt-24 overflow-x-hidden md:pt-28 place-items-center md:gap-6 rounded-b-3xl"
-    >
-      {/* 🔥 FULL BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-center bg-no-repeat bg-cover"
-        style={{
-          backgroundImage: "url('/images/banner.png')",
-        }}
-      ></div>
+    <Element name="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      {/* Background Decorative Elements */}
+      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-violet-600/20 blur-[120px] rounded-full" />
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full" />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/60 rounded-b-3xl"></div>
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Left Content */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="text-center lg:text-left z-10"
+        >
+          <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-sm font-semibold mb-6">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-500"></span>
+            </span>
+            Available for new projects
+          </motion.div>
 
-      {/* Actual Content */}
-      <div className="relative z-10">
-        <div className="relative mx-auto w-fit">
-          <img
-            src="/images/Rishabh.jpg"
-            width={160}
-            alt="Rishabh"
-            className="border-4 rounded-full shadow-lg border-myWhite"
-          />
-          <p className="absolute px-6 py-3 text-xs font-semibold rounded-full shadow-lg font-otterco bg-myWhite top-16 -right-24 animate-slideIn">
-            Hi, I am Rishabh 👋🏼
-          </p>
-        </div>
+          <motion.h1 variants={itemVariants} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+            I build digital <br />
+            <span className="text-gradient">experiences</span>
+          </motion.h1>
 
-        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-center text-white md:text-5xl">
-          Software Developer
-        </h1>
+          <motion.p variants={itemVariants} className="text-lg text-slate-400 mb-10 max-w-xl mx-auto lg:mx-0">
+            Hi, I'm <span className="text-white font-semibold">Rishabh Pal</span>. A passionate Software Developer
+            focused on creating high-performance, human-centric web applications with clean code.
+          </motion.p>
 
-        <div className="py-6 text-center">
-  <a
-    download="RishabhDotNet.pdf"
-    href="/Resume.pdf"
-    className="px-12 py-4 text-lg text-white transition-all duration-300 rounded-full shadow-xl font-otterco bg-gradient-to-r from-purple-600 to-blue-600 animate-pulse hover:scale-105"
-  >
-    Resume
-  </a>
-</div>
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <a
+              // href="/Resume.pdfff"
+              download
+              className="group flex items-center gap-2 px-8 py-4 bg-violet-600 hover:bg-violet-500 text-white font-bold rounded-2xl transition-all shadow-xl shadow-violet-600/20 active:scale-95"
+            >
+              Download CV
+              <Download size={20} className="group-hover:translate-y-0.5 transition-transform" />
+            </a>
+            <button className="group flex items-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-bold rounded-2xl transition-all border border-white/10 active:scale-95">
+              View Work
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </button>
+          </motion.div>
+        </motion.div>
 
+        {/* Right Visual Element */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+          className="relative flex justify-center lg:justify-end"
+        >
+          <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+            {/* Animated rings */}
+            <div className="absolute inset-0 animate-spin-slow p-4">
+              <div className="w-full h-full rounded-full border-2 border-dashed border-violet-500/30" />
+            </div>
+
+            <div className="absolute inset-0 p-8">
+              <div className="w-full h-full rounded-3xl overflow-hidden border-2 border-white/10 relative z-10 group">
+                <img
+                  src="/images/Rishabh.jpg"
+                  alt="Rishabh Pal"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-transparent" />
+              </div>
+            </div>
+
+            {/* Floating Badges */}
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -top-4 -right-4 glass-card px-4 py-2 border-violet-500/20 z-20"
+            >
+              <span className="text-xl">🚀</span>
+            </motion.div>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              className="absolute -bottom-6 -left-6 glass-card px-4 py-2 border-blue-500/20 z-20"
+            >
+              <span className="text-sm font-bold text-blue-400">#Developer</span>
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
     </Element>
   );

@@ -1,46 +1,61 @@
-@font-face {
-  font-family: "OttercoDisplay";
-  src: url("/fonts/OttercoDisplay-LightItalic.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "OttercoDisplay";
-  src: url("/fonts/OttercoDisplay-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OttercoDisplay";
-  src: url("/fonts/OttercoDisplay-SemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OttercoDisplay";
-  src: url("/fonts/OttercoDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-/* gradient  */
-
-.text-gradient {
-  background: linear-gradient(
-    97.0286deg,
-    rgb(11, 11, 11) 0%,
-    rgba(12, 12, 12, 0.55) 100%,
-    rgba(12, 12, 12, 0.55) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  --webkit-text-fill-color: transparent;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #16161a;
+  --accent-primary: #8b5cf6; /* Violet-500 */
+  --accent-secondary: #3b82f6; /* Blue-500 */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply antialiased;
+  }
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    @apply rounded-2xl transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-blue-400;
+  }
+
+  .section-padding {
+    @apply py-20 px-6 md:px-12 lg:px-24;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}

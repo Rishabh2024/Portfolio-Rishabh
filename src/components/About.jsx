@@ -1,70 +1,82 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Element } from "react-scroll";
-import { FaBriefcase, FaProjectDiagram, FaSmile, FaUserTie } from "react-icons/fa";
+import { Briefcase, FolderGit2, Users, User } from "lucide-react";
 
 const About = () => {
+  const stats = [
+    { label: "Years Experience", value: "2+", icon: <Briefcase size={24} />, color: "text-violet-400" },
+    { label: "Projects Completed", value: "20+", icon: <FolderGit2 size={24} />, color: "text-blue-400" },
+    { label: "Happy Clients", value: "10+", icon: <Users size={24} />, color: "text-emerald-400" },
+  ];
+
   return (
-    <Element
-      name="about"
-      className="relative px-6 py-20 bg-gradient-to-b from-indigo-50 via-white to-white rounded-b-3xl"
-    >
-      {/* Section Title */}
-      <div className="mb-12 text-center">
-        <h1 className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
-          About Me
-        </h1>
-        <span className="block w-20 h-1 mx-auto mt-3 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></span>
-        
-      </div>
+    <Element name="about" className="section-padding bg-[#0a0a0c] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Image/Visual */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative flex justify-center"
+          >
+            <div className="relative w-64 h-64 md:w-80 md:h-80">
+              <div className="absolute inset-0 bg-gradient-to-tr from-violet-600 to-blue-600 rounded-3xl rotate-6 blur-2xl opacity-20" />
+              <div className="absolute inset-0 bg-violet-500/10 rounded-3xl -rotate-6 border border-violet-500/20" />
+              <div className="relative w-full h-full glass-card flex items-center justify-center border-white/10">
+                <User size={120} className="text-violet-500/50" />
+              </div>
+            </div>
+          </motion.div>
 
-      {/* Content */}
-      <div className="flex flex-col items-center max-w-6xl gap-12 mx-auto md:flex-row">
-        {/* Icon instead of Avatar */}
-        <div className="relative flex-shrink-0">
-          <div className="flex items-center justify-center w-48 h-48 text-6xl text-indigo-600 transition-transform duration-500 transform border-4 border-indigo-500 rounded-full shadow-xl bg-gradient-to-tr from-purple-200 via-pink-200 to-indigo-200 hover:scale-105">
-            <FaUserTie />
+          {/* Right: Content */}
+          <div className="text-left">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-5xl font-bold mb-6"
+            >
+              Building digital products <br />
+              <span className="text-gradient">with purpose.</span>
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-slate-400 text-lg mb-10 leading-relaxed"
+            >
+              Product-focused, data-driven <span className="text-white font-medium text-xl">Software Developer</span> with 2+ years of experience. 
+              I specialize in building high-performance web applications using <span className="text-violet-400">React, Next.js, and Node.js</span>. 
+              My focus is on creating scalable systems and AI-powered solutions that solve real-world problems.
+            </motion.p>
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 + index * 0.1 }}
+                  className="glass-card p-6 flex flex-col items-center sm:items-start text-center sm:text-left hover:border-white/20"
+                >
+                  <div className={`${stat.color} mb-3`}>
+                    {stat.icon}
+                  </div>
+                  <h4 className="text-2xl font-bold text-white">{stat.value}</h4>
+                  <p className="text-xs text-slate-500 uppercase tracking-widest">{stat.label}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
-
-        {/* Description + Stats */}
-        <div className="flex-1 space-y-8">
-          {/* Description */}
-          <p className="text-lg leading-relaxed text-gray-700 opacity-0 animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
-            Product-focused data driven AI Engineer with hands-on experience contributing to large-scale open-source projects & building production-grade web apps. Strong foundation in <b>JavaScript</b> Reactjs & Nextjs & LMS with expertise in Web apps. actively building AI-powered solutions and scalable systems. Solved 200+ algorithm problems across competitive coding platforms.
-          
-          </p>
-
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6">
-            <div className="flex flex-col items-center p-4 transition bg-white shadow rounded-xl hover:shadow-lg">
-              <FaBriefcase className="w-6 h-6 mb-2 text-indigo-500" />
-              <p className="text-2xl font-bold text-indigo-600">2+</p>
-              <p className="text-sm text-gray-500">Year Experience</p>
-            </div>
-            <div className="flex flex-col items-center p-4 transition bg-white shadow rounded-xl hover:shadow-lg">
-              <FaProjectDiagram className="w-6 h-6 mb-2 text-green-500" />
-              <p className="text-2xl font-bold text-green-600">20+</p>
-              <p className="text-sm text-gray-500">Projects Completed</p>
-            </div>
-            <div className="flex flex-col items-center p-4 transition bg-white shadow rounded-xl hover:shadow-lg">
-              <FaSmile className="w-6 h-6 mb-2 text-pink-500" />
-              <p className="text-2xl font-bold text-pink-600">10+</p>
-              <p className="text-sm text-gray-500">Happy Clients</p>
-            </div>
-          </div>
-        </div>
       </div>
-
-      {/* Fade Animation */}
-      <style>{`
-        @keyframes fadeInUp {
-          0% { opacity: 0; transform: translateY(20px); }
-          100% { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeInUp {
-          animation: fadeInUp .6s ease forwards;
-        }
-      `}</style>
     </Element>
   );
 };
