@@ -105,4 +105,12 @@ export const skillData = [
       "Bespoke software solutions tailored for companies to automate operations and improve organizational efficiency.",
     icon: FaUsersCog,
   },
+
+  {
+  skillName: "Landing Page",
+  skillDescription:
+    "We design and develop high-converting landing pages that capture user attention, enhance engagement, and drive measurable results.",
+  icon: FaUsersCog,
+}
+  
 ];
